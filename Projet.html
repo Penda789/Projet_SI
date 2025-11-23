@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Projets - Portfolio</title>
+    <link rel="stylesheet" href="sommaire.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Mes Projets</h1>
+    <nav id="nav">
+        <ul>
+            <li><a href="Sommaire.html">Accueil</a></li>
+            <li><a href="Projet.html">Projets</a></li>
+            <li><a href="Travaux.html">Travaux SI</a></li>
+        </ul>
+        <div class="menu-btn" onclick="toggleMenu()">☰</div>
+    </nav>
+</header>
+
+<section class="section">
+    <h2>📌 Projet AURA</h2>
+    <p>Voici les livrables du projet AURA réalisés en équipe :</p>
+
+    <div class="cards-container">
+        <div class="card">
+            <h3>Cahier des charges</h3>
+            <a href="Cahier_de_charge_AURA.pdf" target="_blank" class="btn">Ouvrir</a>
+        </div>
+
+        <div class="card">
+            <h3>SFG & SFD</h3>
+            <a href="SFG_SFD.pdf" target="_blank" class="btn">Voir</a>
+        </div>
+
+        <div class="card">
+            <h3>Schéma BD</h3>
+            <a href="Schema_BD_Aura.png" target="_blank" class="btn">Afficher</a>
+        </div>
+
+        <div class="card">
+            <h3>Rapport de test</h3>
+            <a href="Analyse_Test.pdf" target="_blank" class="btn">Consulter</a>
+        </div>
+
+        <div class="card">
+            <h3>Rapport de faisabilité</h3>
+            <a href="#" class="btn">À venir</a>
+        </div>
+
+        <div class="card">
+            <h3>Maquette</h3>
+            <a href="#" class="btn">À venir</a>
+        </div>
+
+        <div class="card">
+            <h3>Diagramme UML</h3>
+            <a href="#" class="btn">À venir</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 - Portfolio Penda Sow</p>
+</footer>
+
+<script>
+    function toggleMenu(){
+        document.getElementById("nav").classList.toggle("open");
+    }
+</script>
+</body>
+</html>
