@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio - Penda Sow</title>
+    <link rel="stylesheet" href="sommaire.css">
+</head>
+
+<body>
+    <header>
+        <h1>Portfolio de Penda Sow</h1>
+        <nav id="nav">
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#travaux">Travaux SI</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-btn" onclick="toggleMenu()">☰</div>
+        </nav>
+    </header>
+
+    <!-- SECTION ACCUEIL -->
+    <section id="accueil" class="section">
+        <h2>Bienvenue !</h2>
+        <p>Voici mon portfolio qui présente mes projets, mes travaux et mes compétences.</p>
+        <button onclick="window.location=''">Voir mes projets</button>
+    </section>
+
+    <!-- SECTION PROJETS -->
+    <section id="projets" class="section">
+        <h2>📁 Mes Projets</h2>
+        <div class="cards-container">
+            <div class="card">
+                <h3>Aura</h3>
+                <p>Site web interactif de gestion d'evenement avec HTML, CSS et JS.</p>
+                <a href="Projet.html" class="btn">Voir plus</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="travaux" class="section">
+        <h2>📚 Cours </h2>
+        <ul class="travaux-list">
+            <li><a href="Cours1.pdf" target="_blank">COURS 1</a></li>
+            <li><a href="Cours_gestion_projet_SI.pdf" target="_blank">COURS 2</a></li>
+            <li><a href="Cours_Les_livrables_SI.pdf" target="_blank">COURS 3/résultat</a></li>
+            <li><a href="Cours_Les_phases_SI.pdf" target="_blank">COURS 4</a></li>
+        </ul>
+      </section>
+
+    <!-- SECTION TRAVAUX -->
+    <section id="travaux" class="section">
+        <h2>📚 Travaux de SI</h2>
+        <ul class="travaux-list">
+            <li><a href="TD1-SI.pdf" target="_blank">TD1</a></li>
+            <li><a href="TD2-SI.pdf" target="_blank">TD2</a><img src="TP2.png" class="img-td1"></li>
+            <li><a href="Diagramme_event_resultat_ex1_TP3.drawio" target="_blank">Diagramme événement/résultat</a><img src="TP3.png" class="img-td1"></li>
+            <li><a href="TP4.png" class="img-td1">TP4</a></li>
+            <li><a href="tp_gantt (1).pdf" target="_blank">TP Gantt </a><a href="DiagrammeGantt.pdf">et diagramme gantt </a></li>
+        </ul>
+      </section>
+
+    <footer>
+        <p>© 2025 - Portfolio Penda Sow</p>
+    </footer>
+
+    <script>
+        function toggleMenu(){
+            document.getElementById("nav").classList.toggle("open");
+        }
+    </script>
+</body>
+</html>
